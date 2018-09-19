@@ -1,0 +1,111 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+    background: cornsilk;
+}
+
+.grid_container {
+	width: 700px;
+	height: 100px;
+	position: relative;
+	left: 32%;
+	top: 30%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+p {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 6em;
+    color: lightseagreen;
+	float: left;
+	margin-left: 5px;
+}
+
+@keyframes o_animate {
+    0% { top: 0px; left: 0px; transform: rotate(0deg); }
+    100% { color: brown; top: 0px; left: 220px; transform: rotate(540deg); }
+}
+
+.o {
+    position: relative;
+    animation: o_animate 3s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: .8s;
+}
+
+@keyframes r_animate {
+    0% { top: 0px; left: 0px; }
+    100% { color: brown; top: 0px; left: 220px; }
+}
+
+.r {
+    position: relative;
+    animation: r_animate 3s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: .8s;
+}
+
+@keyframes g_animate {
+    0% { top: 0px; opacity: 1 }
+    100% { top: -250px; opacity: 0 }
+}
+
+.g {
+    position: relative;
+    animation: g_animate 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes a_animate {
+    0% { top: 0px; left: 0px; }
+    33% { top: 100px; left: 0px; }
+    78% { top: 100px; left: -180px; }
+    100% { color: brown; top: 0px; left: -180px; }
+}
+
+.a {
+    position: relative;
+    animation: a_animate 3s;
+    animation-fill-mode: forwards;
+    animation-delay: .8s;
+}
+
+@keyframes n_animate {
+    0% { top: 0px; left: 0px; }
+    100% { color: brown; top: 0px; left: 45px; }
+}
+
+.n {
+    position: relative;
+    animation: n_animate 2s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes i_animate {
+    0% { top: 0px; opacity: 1 }
+    100% { top: 200px; opacity: 0 }
+}
+
+.i {
+    position: relative;
+    animation: i_animate 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes c_animate {
+    0% { top: 0px; left: 0px; }
+    33% { top: 100px; left: 0px; }
+    78% { top: 100px; left: -330px; }
+    100% { color: brown; top: 0px; left: -330px; }
+}
+
+.c {
+    position: relative;
+    animation: c_animate 3s;
+    animation-fill-mode: forwards;
+    animation-delay: .8s;
+}
